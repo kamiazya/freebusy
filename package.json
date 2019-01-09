@@ -1,0 +1,44 @@
+{
+  "name": "@kamiazya/freebusy",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "repository": "https://github.com/kamiazya/freebusy.git",
+  "author": "kamiazya <yuki@kamiazya.tech>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "nyc mocha test/**/*.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "moment": "^2.23.0"
+  },
+  "nyc": {
+    "include": [
+      "src/*.ts",
+      "src/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text",
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "all": true
+  }
+}

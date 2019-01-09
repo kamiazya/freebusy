@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true
+  },
+  "include": [
+    "./src/*.ts",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "./test/*.ts",
+    "./test/**/*.ts"
+  ]
+}
