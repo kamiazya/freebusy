@@ -5,7 +5,15 @@
   "repository": "https://github.com/kamiazya/freebusy.git",
   "author": "kamiazya <yuki@kamiazya.tech>",
   "license": "MIT",
+  "keywords": [
+    "calendar",
+    "schedule",
+    "event",
+    "freebusy",
+    "timemanagement"
+  ],
   "scripts": {
+    "prepare": "tsc",
     "build": "tsc",
     "test": "nyc mocha test/**/*.ts",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"

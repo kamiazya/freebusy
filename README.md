@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/08cca3a1cc7c48fd91e9e9abea307e0c)](https://app.codacy.com/app/kamiazya/freebusy?utm_source=github.com&utm_medium=referral&utm_content=kamiazya/freebusy&utm_campaign=Badge_Grade_Dashboard) [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy) [![Build Status](https://travis-ci.org/kamiazya/freebusy.svg?branch=master)](https://travis-ci.org/kamiazya/freebusy) [![codecov](https://codecov.io/gh/kamiazya/freebusy/branch/master/graph/badge.svg)](https://codecov.io/gh/kamiazya/freebusy) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy?ref=badge_shield)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/08cca3a1cc7c48fd91e9e9abea307e0c)](https://app.codacy.com/app/kamiazya/freebusy?utm_source=github.com&utm_medium=referral&utm_content=kamiazya/freebusy&utm_campaign=Badge_Grade_Dashboard) [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy) [![Build Status](https://travis-ci.org/kamiazya/freebusy.svg?branch=master)](https://travis-ci.org/kamiazya/freebusy) [![codecov](https://codecov.io/gh/kamiazya/freebusy/branch/master/graph/badge.svg)](https://codecov.io/gh/kamiazya/freebusy) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy?ref=badge_shield) [![npm version](https://badge.fury.io/js/%40kamiazya%2Ffreebusy.svg)](https://badge.fury.io/js/%40kamiazya%2Ffreebusy)
 
 
 # freebusy
@@ -11,16 +11,14 @@ It returns the free block within scope when you enter a list of events.
 
 Redesign [raineorshine/freebusy](https://github.com/raineorshine/freebusy) with TypeScript.
 
-## Feature
+[![https://nodei.co/npm/@kamiazya/freebusy.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/@kamiazya/freebusy.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/@kamiazya/freebusy)
 
-- Determine Free block
-
-## Installation (not yet)
+## Installation
 
 ### yarn
 
 ```bash
-yarn install @kamiazya/freebusy
+yarn add @kamiazya/freebusy
 ```
 
 ### npm
