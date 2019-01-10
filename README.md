@@ -1,4 +1,5 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/08cca3a1cc7c48fd91e9e9abea307e0c)](https://app.codacy.com/app/kamiazya/freebusy?utm_source=github.com&utm_medium=referral&utm_content=kamiazya/freebusy&utm_campaign=Badge_Grade_Dashboard) [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy) [![Build Status](https://travis-ci.org/kamiazya/freebusy.svg?branch=master)](https://travis-ci.org/kamiazya/freebusy) [![codecov](https://codecov.io/gh/kamiazya/freebusy/branch/master/graph/badge.svg)](https://codecov.io/gh/kamiazya/freebusy) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/08cca3a1cc7c48fd91e9e9abea307e0c)](https://app.codacy.com/app/kamiazya/freebusy?utm_source=github.com&utm_medium=referral&utm_content=kamiazya/freebusy&utm_campaign=Badge_Grade_Dashboard) [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy) [![Build Status](https://travis-ci.org/kamiazya/freebusy.svg?branch=master)](https://travis-ci.org/kamiazya/freebusy) [![codecov](https://codecov.io/gh/kamiazya/freebusy/branch/master/graph/badge.svg)](https://codecov.io/gh/kamiazya/freebusy) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy?ref=badge_shield)
+
 
 # freebusy
 
@@ -91,3 +92,6 @@ freeBlocks.blocks
 ## Licence
 
 This software is released under the MIT License, see LICENSE.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy?ref=badge_large)
