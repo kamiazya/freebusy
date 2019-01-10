@@ -1,4 +1,4 @@
-<!-- Thank you for your contribution to dot-github! Please replace {Please write here} with your description -->
+<!-- Thank you for your contribution to freebusy! Please replace {Please write here} with your description -->
 
 ### What was a problem?
 
