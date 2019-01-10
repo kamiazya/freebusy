@@ -9,7 +9,7 @@ export function createBlock(block: BlockLike): Block {
 }
 
 export function createBlocks(blocks: BlockLike[]): Block[] {
-  return blocks.map(block => createBlock(block));
+  return blocks.map((block) => createBlock(block));
 }
 
 export function mapToBlock(block: BlockLike): Block {

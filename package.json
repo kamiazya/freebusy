@@ -16,7 +16,8 @@
     "prepare": "tsc",
     "build": "tsc",
     "test": "nyc mocha test/**/*.ts",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "tslint 'src/**/*.ts'"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
