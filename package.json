@@ -28,7 +28,8 @@
       "src/**/*.ts"
     ],
     "exclude": [
-      "**/*.d.ts"
+      "**/*.d.ts",
+      "demo/*.ts"
     ],
     "extension": [
       ".ts"
