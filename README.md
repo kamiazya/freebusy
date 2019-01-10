@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/08cca3a1cc7c48fd91e9e9abea307e0c)](https://app.codacy.com/app/kamiazya/freebusy?utm_source=github.com&utm_medium=referral&utm_content=kamiazya/freebusy&utm_campaign=Badge_Grade_Dashboard)
 # freebusy [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/test_coverage)](https://codeclimate.com/github/kamiazya/freebusy/test_coverage) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy)
 
 Determine free blocks from a list of events.
