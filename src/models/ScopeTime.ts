@@ -4,6 +4,20 @@ export class ScopeTime {
 
   private starts: number[];
   private ends: number[];
+
+  private static checkDay(day: number) {
+    if (day < 0 || 6 < day) {
+      throw new Error('day should be between 0(Sunday) and 6(Saturday).');
+    }
+  }
+
+  private static checkDayAndHour(day: number, hour: number) {
+    this.checkDay(day);
+    if (hour < 0 || 24 < hour) {
+      throw new Error('day should be between 0 and 24.');
+    }
+  }
+
   constructor(
     option?: {
       defaultStart?: number;
@@ -37,37 +51,23 @@ export class ScopeTime {
   }
 
   public setStart(day: DayOfWeek, hour: number) {
-    if (day < 0 || 6 < day) {
-      throw new Error('day should be between 0(Sunday) and 6(Saturday).');
-    }
-    if (hour < 0 || 24 < hour) {
-      throw new Error('day should be between 0 and 24.');
-    }
+    ScopeTime.checkDayAndHour(day, hour);
     this.starts[day] = hour;
   }
 
   public setEnd(day: DayOfWeek, hour: number) {
-    if (day < 0 || 6 < day) {
-      throw new Error('day should be between 0(Sunday) and 6(Saturday).');
-    }
-    if (hour < 0 || 24 < hour) {
-      throw new Error('day should be between 0 and 24.');
-    }
+    ScopeTime.checkDayAndHour(day, hour);
     this.ends[day] = hour;
   }
 
   public start(day: DayOfWeek) {
-    if (day < 0 || 6 < day) {
-      throw new Error('day should be between 0(Sunday) and 6(Saturday).');
-    }
+    ScopeTime.checkDay(day);
     return this.starts[day];
   }
 
 
   public end(day: DayOfWeek) {
-    if (day < 0 || 6 < day) {
-      throw new Error('day should be between 0(Sunday) and 6(Saturday).');
-    }
+    ScopeTime.checkDay(day);
     return this.ends[day];
   }
 }
