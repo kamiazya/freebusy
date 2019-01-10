@@ -1,4 +1,4 @@
-# freebusy
+# freebusy [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/test_coverage)](https://codeclimate.com/github/kamiazya/freebusy/test_coverage) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy)
 
 Determine free blocks from a list of events.
 
