@@ -1,5 +1,6 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/08cca3a1cc7c48fd91e9e9abea307e0c)](https://app.codacy.com/app/kamiazya/freebusy?utm_source=github.com&utm_medium=referral&utm_content=kamiazya/freebusy&utm_campaign=Badge_Grade_Dashboard)
-# freebusy [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/test_coverage)](https://codeclimate.com/github/kamiazya/freebusy/test_coverage) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/08cca3a1cc7c48fd91e9e9abea307e0c)](https://app.codacy.com/app/kamiazya/freebusy?utm_source=github.com&utm_medium=referral&utm_content=kamiazya/freebusy&utm_campaign=Badge_Grade_Dashboard) [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/test_coverage)](https://codeclimate.com/github/kamiazya/freebusy/test_coverage) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy)
+
+# freebusy
 
 Determine free blocks from a list of events.
 
@@ -31,9 +32,9 @@ npm install @kamiazya/freebusy
 
 Determine free blocks from a list of events and display result with [moment.js](http://momentjs.com/).
 
-In this case, it detects free block when there are three events from 9 o'clock to 17 o'clock in 2019-01-10.
-
 ### Simple
+
+In this case, it detects free block when there are three events from 9 o'clock to 17 o'clock in 2019-01-10.
 
 ```typescript
 import moment from 'moment';

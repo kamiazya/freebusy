@@ -1,4 +1,4 @@
-import { ScopeTime, DayOfWeek } from '../../src/models';
+import { ScopeTime, DayOfWeek } from '../../src';
 import { expect } from 'chai';
 
 describe('ScopeTime', () => {

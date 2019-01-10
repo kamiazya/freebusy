@@ -27,6 +27,9 @@
       "src/*.ts",
       "src/**/*.ts"
     ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
     "extension": [
       ".ts"
     ],
@@ -34,6 +37,8 @@
       "ts-node/register"
     ],
     "reporter": [
+      "json",
+      "lcov",
       "text",
       "text-summary",
       "html"

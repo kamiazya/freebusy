@@ -1,4 +1,4 @@
-import { Block } from '../../src/models';
+import { Block } from '../../src';
 import { expect } from 'chai';
 
 describe('Block', () => {
