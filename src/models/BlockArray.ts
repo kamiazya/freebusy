@@ -33,7 +33,7 @@ export class BlockArray {
   }
 
   public toISO8601(): BlockISO8601[] {
-    return this.blocks.map(block => block.toISO8601());
+    return this.blocks.map((block) => block.toISO8601());
   }
 
 }

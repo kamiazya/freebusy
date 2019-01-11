@@ -15,8 +15,10 @@
   "scripts": {
     "prepare": "tsc",
     "build": "tsc",
+    "pretest": "npm run lint",
     "test": "nyc mocha test/**/*.ts",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "tslint --project tsconfig.json 'src/**/*.ts'"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
