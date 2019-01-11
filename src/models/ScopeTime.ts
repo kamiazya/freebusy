@@ -1,22 +1,10 @@
 import { DayOfWeek } from './DayOfWeek';
+import { DateTimeValidator } from './DateTimeValidator';
 
 export class ScopeTime {
 
   private starts: number[];
   private ends: number[];
-
-  private static checkDay(day: number) {
-    if (day < 0 || 6 < day) {
-      throw new Error('day should be between 0(Sunday) and 6(Saturday).');
-    }
-  }
-
-  private static checkDayAndHour(day: number, hour: number) {
-    this.checkDay(day);
-    if (hour < 0 || 24 < hour) {
-      throw new Error('day should be between 0 and 24.');
-    }
-  }
 
   constructor(
     option?: {
@@ -33,15 +21,14 @@ export class ScopeTime {
       defaultEnd = option.defaultEnd;
     }
 
-    if (defaultStart < 0 || 24 < defaultStart) {
-      throw new Error('set default start time between 0 and 24.');
-    }
-    if (defaultEnd < 0 || 24 < defaultEnd) {
-      throw new Error('set default end time between 0 and 24.');
-    }
-    if (defaultStart > defaultEnd) {
-      throw new Error('start is larger then end.');
-    }
+    DateTimeValidator
+      .validateHour(defaultStart,
+        'set default start time between 0 and 24.')
+      .validateHour(defaultEnd,
+        'set default end time between 0 and 24.')
+      .validateStartHourAndEndHour(defaultStart, defaultEnd,
+        'start is larger then end.');
+
     this.starts = [];
     this.ends = [];
     for (let i = 0; i < 7; i++) {
@@ -51,23 +38,39 @@ export class ScopeTime {
   }
 
   public setStart(day: DayOfWeek, hour: number) {
-    ScopeTime.checkDayAndHour(day, hour);
+    DateTimeValidator
+      .validateDay(day,
+        'day should be between 0(Sunday) and 6(Saturday).')
+      .validateHour(hour,
+        'set start time between 0 and 24.');
+
     this.starts[day] = hour;
   }
 
   public setEnd(day: DayOfWeek, hour: number) {
-    ScopeTime.checkDayAndHour(day, hour);
+    DateTimeValidator
+      .validateDay(day,
+        'day should be between 0(Sunday) and 6(Saturday).')
+      .validateHour(hour,
+        'set end time between 0 and 24.');
+
     this.ends[day] = hour;
   }
 
   public start(day: DayOfWeek) {
-    ScopeTime.checkDay(day);
+    DateTimeValidator
+      .validateDay(day,
+        'day should be between 0(Sunday) and 6(Saturday).');
+
     return this.starts[day];
   }
 
 
   public end(day: DayOfWeek) {
-    ScopeTime.checkDay(day);
+    DateTimeValidator
+      .validateDay(day,
+      'day should be between 0(Sunday) and 6(Saturday).');
+
     return this.ends[day];
   }
 }
