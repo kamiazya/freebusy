@@ -2,6 +2,10 @@ import moment from 'moment';
 import { BlockISO8601 } from './BlockISO8601';
 import { BlockLikeObject } from './BlockLikeObject';
 
+/**
+ * Block is a object for abstract handling
+ * of the start and end of time.
+ */
 export class Block implements BlockLikeObject {
   public readonly start: moment.Moment;
   public readonly end: moment.Moment;
