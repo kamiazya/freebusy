@@ -45,8 +45,8 @@ describe('Block', () => {
     it('should same value for propaties(start, end).', () => {
       const src = new Block(new Date(1), new Date(2));
       const cloned = src.clone();
-      expect(src.start.toISOString()).to.equal(cloned.start.toISOString());
-      expect(src.end.toISOString()).to.equal(cloned.end.toISOString());
+      expect(src.start.toISO()).to.equal(cloned.start.toISO());
+      expect(src.end.toISO()).to.equal(cloned.end.toISO());
     });
   });
 
@@ -69,15 +69,16 @@ describe('Block', () => {
       const b = new Block('2019-01-01T10:30:00', '2019-01-01T11:30:00');
       const output = a.subtract(b);
       expect(output).to.be.length(2);
-      const [ fisrtBlock, lastBlock ] = output;
-      expect(fisrtBlock.start.hour()).to.equal(10);
-      expect(fisrtBlock.start.minute()).to.equal(0);
-      expect(fisrtBlock.end.hour()).to.equal(10);
-      expect(fisrtBlock.end.minute()).to.equal(30);
-      expect(lastBlock.start.hour()).to.equal(11);
-      expect(lastBlock.start.minute()).to.equal(30);
-      expect(lastBlock.end.hour()).to.equal(12);
-      expect(lastBlock.end.minute()).to.equal(0);
+      const [fisrtBlock, lastBlock] = output;
+
+      expect(fisrtBlock.start.hour).to.equal(10);
+      expect(fisrtBlock.start.minute).to.equal(0);
+      expect(fisrtBlock.end.hour).to.equal(10);
+      expect(fisrtBlock.end.minute).to.equal(30);
+      expect(lastBlock.start.hour).to.equal(11);
+      expect(lastBlock.start.minute).to.equal(30);
+      expect(lastBlock.end.hour).to.equal(12);
+      expect(lastBlock.end.minute).to.equal(0);
 
     });
 
@@ -101,10 +102,10 @@ describe('Block', () => {
       expect(output).to.be.length(1);
 
       const [outputBlock] = output;
-      expect(outputBlock.start.hour()).to.equal(10);
-      expect(outputBlock.start.minute()).to.equal(0);
-      expect(outputBlock.end.hour()).to.equal(10);
-      expect(outputBlock.end.minute()).to.equal(30);
+      expect(outputBlock.start.hour).to.equal(10);
+      expect(outputBlock.start.minute).to.equal(0);
+      expect(outputBlock.end.hour).to.equal(10);
+      expect(outputBlock.end.minute).to.equal(30);
     });
   });
 

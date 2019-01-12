@@ -1,25 +1,27 @@
-import moment from 'moment';
 import { Block } from './Block';
 import { ScopeTime } from './ScopeTime';
 import { BlockISO8601 } from './BlockISO8601';
+import { DateTimeInput, convertDataTime } from '../utils';
 
 export class BlockArray {
 
   static days(
-    startDate: moment.MomentInput, endDate: moment.MomentInput,
+    startDate: DateTimeInput, endDate: DateTimeInput,
     scope: ScopeTime = new ScopeTime(),
   ): BlockArray {
 
-    let cur = moment(startDate);
+    const s = convertDataTime(startDate);
+    const e = convertDataTime(endDate);
+
+    let cur = s;
     const blocks: Block[] = [];
 
-    while (cur.isBefore(endDate)) {
-      const day = (cur.day() + 6) % 7; // rotate number to use Sun as beginning of week
-      const start = cur.clone().add(scope.start(day), 'hours');
-      const end = cur.clone().add(scope.end(day), 'hours');
-
+    while (cur < e) {
+      const day = (cur.day + 6) % 7; // rotate number to use Sun as beginning of week
+      const start = cur.plus({ hours: scope.start(day) });
+      const end = cur.plus({ hours: scope.end(day) });
       blocks.push(new Block(start, end));
-      cur = cur.clone().add(1, 'days');
+      cur = cur.plus({ days: 1 });
     }
 
     return new BlockArray(blocks);

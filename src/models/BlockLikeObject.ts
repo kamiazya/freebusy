@@ -1,5 +1,5 @@
-import moment from 'moment';
+import { DateTimeInput } from '../utils';
 export interface BlockLikeObject {
-  start: moment.MomentInput;
-  end: moment.MomentInput;
+  start: DateTimeInput;
+  end: DateTimeInput;
 }
