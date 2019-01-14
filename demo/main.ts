@@ -1,4 +1,3 @@
-import moment from 'moment';
 import { getFree, BlockLike, ScopeTime } from '@kamiazya/freebusy';
 
 const events: BlockLike[] = [
@@ -25,12 +24,12 @@ const freeBlocks = getFree({
       defaultEnd: 17,
     }),
   },
-  events: events,
+  events,
 });
 
 freeBlocks.blocks
-  .forEach(block => {
-    const formatedStart = moment(block.start).format('YYYY-MM-DD HH:mm');
-    const formatedEnd = moment(block.end).format('HH:mm');
-    console.log(`${formatedStart} - ${formatedEnd} is free.`);
+  .forEach((block) => {
+    const start = block.start.toFormat('DDD T');
+    const end = block.end.toFormat('T');
+    console.log(`${start} - ${end}`);
   });

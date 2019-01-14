@@ -9,11 +9,13 @@
     "start": "ts-node main.ts"
   },
   "devDependencies": {
+    "@types/luxon": "^1.4.1",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
   },
   "dependencies": {
-    "@kamiazya/freebusy": "0.0.1",
+    "@kamiazya/freebusy": "0.0.2",
+    "luxon": "^1.10.0",
     "moment": "^2.23.0"
   }
 }

@@ -1,6 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/08cca3a1cc7c48fd91e9e9abea307e0c)](https://app.codacy.com/app/kamiazya/freebusy?utm_source=github.com&utm_medium=referral&utm_content=kamiazya/freebusy&utm_campaign=Badge_Grade_Dashboard) [![Maintainability](https://api.codeclimate.com/v1/badges/45b4f1f243a6fc8efd32/maintainability)](https://codeclimate.com/github/kamiazya/freebusy/maintainability) [![CodeFactor](https://www.codefactor.io/repository/github/kamiazya/freebusy/badge)](https://www.codefactor.io/repository/github/kamiazya/freebusy) [![Build Status](https://travis-ci.org/kamiazya/freebusy.svg?branch=master)](https://travis-ci.org/kamiazya/freebusy) [![codecov](https://codecov.io/gh/kamiazya/freebusy/branch/master/graph/badge.svg)](https://codecov.io/gh/kamiazya/freebusy) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy?ref=badge_shield) [![npm version](https://badge.fury.io/js/%40kamiazya%2Ffreebusy.svg)](https://badge.fury.io/js/%40kamiazya%2Ffreebusy)
 
-
 # freebusy
 
 Determine free blocks from a list of events.
@@ -36,7 +35,6 @@ Determine free blocks from a list of events and display result with [moment.js](
 In this case, it detects free block when there are three events from 9 o'clock to 17 o'clock in 2019-01-10.
 
 ```typescript
-import moment from 'moment';
 import { getFree, BlockLike, ScopeTime } from '@kamiazya/freebusy';
 
 const events: BlockLike[] = [
@@ -63,33 +61,25 @@ const freeBlocks = getFree({
       defaultEnd: 17,
     }),
   },
-  events: events,
+  events,
 });
 
 freeBlocks.blocks
-  .forEach(block => {
-    const formatedStart = moment(block.start).format('YYYY-MM-DD HH:mm');
-    const formatedEnd = moment(block.end).format('HH:mm');
-    console.log(`${formatedStart} - ${formatedEnd} is free.`);
+  .forEach((block) => {
+    const start = block.start.toFormat('DDD T');
+    const end = block.end.toFormat('T');
+    console.log(`${start} - ${end}`);
   });
 
 // Output:
-//   2019-01-10 09:00 - 09:30 is free.
-//   2019-01-10 10:00 - 12:00 is free.
-//   2019-01-10 13:00 - 15:00 is free.
-//   2019-01-10 16:00 - 17:00 is free.
+//   2019年1月10日 9:00 - 9:30
+//   2019年1月10日 10:00 - 12:00
+//   2019年1月10日 13:00 - 15:00
+//   2019年1月10日 16:00 - 17:00
 ```
-
-## Todo
-
-- [ ] add test
-- [ ] add CI
-- [ ] take coverage
-- [ ] add badges
 
 ## Licence
 
 This software is released under the MIT License, see LICENSE.
-
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkamiazya%2Ffreebusy?ref=badge_large)

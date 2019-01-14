@@ -2,12 +2,18 @@
 # yarn lockfile v1
 
 
-"@kamiazya/freebusy@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@kamiazya/freebusy/-/freebusy-0.0.1.tgz#33d14d610567283034b367c02ac649487d92c108"
-  integrity sha512-4OZ3atZFR+P78wbZyEDYmxjIWgCzgLZi0QX0xfL78HV8VWJGXoD5NguBys52JGieAmU1wyAVFarWMKWMCmOo0w==
+"@kamiazya/freebusy@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@kamiazya/freebusy/-/freebusy-0.0.2.tgz#e36e7b3c27971130e3cb597712db78fa62b22bee"
+  integrity sha512-oaBA3hulg2OzEtQvlcJ5nGZ2oykd6xsnqgmX9xp2AhKiN5b2LrSFFBo3qV7v0O6w5VWGo4Lfws5mlJHKhEXSxA==
   dependencies:
+    luxon "^1.10.0"
     moment "^2.23.0"
+
+"@types/luxon@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.4.1.tgz#ece499ada215fb253e07c7ac05d30731412ba6aa"
+  integrity sha512-mYv/gbkOJ40CDgR8st5sosfFNrJncdlkpdzQSNRdU86UQg3oWWmll4AO/7B8F5FlBC6YrIXqXDSnkoCBqo+uMA==
 
 arrify@^1.0.0:
   version "1.0.1"
@@ -23,6 +29,11 @@ diff@^3.1.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
   integrity sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA==
+
+luxon@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.10.0.tgz#335b55e2fed50e09f869aee828897a3f67c7044e"
+  integrity sha512-ry3GKh//v3isD6oJN5pFWmdh+3GiScwv9q8VgG6fZ2j1guGOol2vVVdo4GBAWCrcq5RHOqSeipqHBnOu/u024Q==
 
 make-error@^1.1.1:
   version "1.3.5"
