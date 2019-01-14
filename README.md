@@ -28,7 +28,9 @@ npm install @kamiazya/freebusy
 
 ## Usage
 
-Determine free blocks from a list of events and display result with [moment.js](http://momentjs.com/).
+Determine free blocks from a list of events.
+
+Format result by [luxon](https://moment.github.io/luxon/).
 
 ### Simple
 
