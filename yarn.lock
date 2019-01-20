@@ -95,10 +95,10 @@
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.1.7.tgz#1b8e33b61a8c09cbe1f85133071baa0dbf9fa71a"
   integrity sha512-2Y8uPt0/jwjhQ6EiluT0XCri1Dbplr0ZxfFXUz+ye13gaqE8u5gL5ppao1JrUYr9cIip5S6MvQzBS7Kke7U9VA==
 
-"@types/luxon@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.4.1.tgz#ece499ada215fb253e07c7ac05d30731412ba6aa"
-  integrity sha512-mYv/gbkOJ40CDgR8st5sosfFNrJncdlkpdzQSNRdU86UQg3oWWmll4AO/7B8F5FlBC6YrIXqXDSnkoCBqo+uMA==
+"@types/luxon@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.4.2.tgz#996b90d6a40977a9f856b3e22aefcec6a8fd66d0"
+  integrity sha512-YOJd6g4YR1UMPuY+P15WEKEsMjk+rS63J8zQZ7dvoXE3QlUQ7IsYVnZjvIhyXkjHlTqqb8xcd3VBgAeRXBOSOA==
 
 "@types/mocha@^5.2.5":
   version "5.2.5"
