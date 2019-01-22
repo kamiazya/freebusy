@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "luxon": "^1.10.0",
-    "moment": "^2.23.0"
+    "moment": "^2.24.0"
   },
   "nyc": {
     "include": [
