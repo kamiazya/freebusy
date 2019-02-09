@@ -30,10 +30,10 @@
     "nyc": "^13.2.0",
     "ts-node": "^8.0.2",
     "tslint": "^5.12.1",
-    "typescript": "^3.3.1"
+    "typescript": "^3.3.3"
   },
   "dependencies": {
-    "luxon": "^1.11.0",
+    "luxon": "^1.11.1",
     "moment": "^2.24.0"
   },
   "nyc": {
