@@ -25,7 +25,7 @@
     "@types/luxon": "^1.11.0",
     "@types/mocha": "^5.2.5",
     "chai": "^4.2.0",
-    "codecov": "^3.1.0",
+    "codecov": "^3.2.0",
     "mocha": "^5.2.0",
     "nyc": "^13.2.0",
     "ts-node": "^8.0.2",
@@ -33,7 +33,7 @@
     "typescript": "^3.3.3"
   },
   "dependencies": {
-    "luxon": "^1.11.1",
+    "luxon": "^1.11.3",
     "moment": "^2.24.0"
   },
   "nyc": {
