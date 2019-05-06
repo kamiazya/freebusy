@@ -20,7 +20,7 @@
     "test": "nyc mocha test/**/*.ts",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "lint": "tslint --project tsconfig.json 'src/**/*.ts'",
-    "doc": "typedoc --out docs/ src/"
+    "doc": "typedoc --out docs/ src/ && touch docs/.nojekyll"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
