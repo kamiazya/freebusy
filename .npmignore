@@ -1,6 +1,7 @@
 test/
 src/
 demo/
+docs/
 node_modules/
 coverage/
 .nyc_output/
