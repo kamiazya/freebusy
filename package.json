@@ -18,7 +18,8 @@
     "pretest": "npm run lint",
     "test": "nyc mocha test/**/*.ts",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "lint": "tslint --project tsconfig.json 'src/**/*.ts'"
+    "lint": "tslint --project tsconfig.json 'src/**/*.ts'",
+    "doc": "typedoc --out docs/ src/"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
@@ -30,6 +31,7 @@
     "nyc": "^14.1.0",
     "ts-node": "^8.0.2",
     "tslint": "^5.16.0",
+    "typedoc": "^0.14.2",
     "typescript": "^3.4.5"
   },
   "dependencies": {
