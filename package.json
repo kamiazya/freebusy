@@ -33,7 +33,7 @@
     "typescript": "^3.4.5"
   },
   "dependencies": {
-    "luxon": "^1.11.3",
+    "luxon": "^1.13.0",
     "moment": "^2.24.0"
   },
   "nyc": {
