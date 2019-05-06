@@ -1,6 +1,6 @@
 {
   "name": "@kamiazya/freebusy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Determine free blocks from a list of events.",
   "main": "dist/index.js",
   "repository": "https://github.com/kamiazya/freebusy.git",
