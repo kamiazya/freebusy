@@ -903,9 +903,9 @@ lru-cache@^4.0.1:
     yallist "^2.1.2"
 
 luxon@^1.11.3:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.13.0.tgz#95840d8d77ea43f4501d525f378f2105e34d1dc2"
-  integrity sha512-j/t5wLTDCUbJgJ6MDp1VFNmeE/j7jmOhk3yKnZ972laS1ofpXVbOOVr9+7abyclAcG8FrPv8T2mg4A39V26vEQ==
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.13.2.tgz#2866c7a7591441aea0004e8cf80d5ca6d917017a"
+  integrity sha512-U7i2AE+/VWeB8PZZkIeEcxJCZvBA8LegCHufaIFYx3qRQdw2UJw3fuaL/Fqi9Q+2MeFYu+gYqIzr5hWOvAMHBQ==
 
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
