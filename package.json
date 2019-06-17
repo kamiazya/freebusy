@@ -33,7 +33,7 @@
     "ts-node": "^8.3.0",
     "tslint": "^5.16.0",
     "typedoc": "^0.14.2",
-    "typescript": "^3.4.5"
+    "typescript": "^3.5.2"
   },
   "dependencies": {
     "luxon": "^1.11.3",
