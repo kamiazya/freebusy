@@ -23,7 +23,7 @@
     "doc": "typedoc --out docs/ src/ && touch docs/.nojekyll"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.3",
+    "@types/chai": "^4.2.6",
     "@types/luxon": "^1.15.1",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
