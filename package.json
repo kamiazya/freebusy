@@ -13,6 +13,10 @@
     "freebusy",
     "timemanagement"
   ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/kamiazya"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
