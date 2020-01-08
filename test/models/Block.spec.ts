@@ -1,5 +1,4 @@
 import { Block } from '../../src';
-import { expect } from 'chai';
 
 describe('Block', () => {
 
@@ -15,21 +14,21 @@ describe('Block', () => {
       const start = '2019-01-02';
       const end = '2019-01-01';
       const func = blockGenerator(start, end);
-      expect(func).to.throw(Error, 'start is after then end');
+      expect(func).toThrow('start is after then end');
     });
 
     it('should throws error when give invalid argumant to start. given start value is 2019-01-000.', () => {
       const start = '2019-01-000';
       const end = '2019-01-02';
       const func = blockGenerator(start, end);
-      expect(func).to.throw(Error, 'start value is invalid');
+      expect(func).toThrow('start value is invalid');
     });
 
     it('should throws error when give invalid argumant to end. given end value is 2019-01-000.', () => {
       const start = '2019-01-01';
       const end = '2019-01-00000';
       const func = blockGenerator(start, end);
-      expect(func).to.throw(Error, 'end value is invalid');
+      expect(func).toThrow('end value is invalid');
     });
 
   });
@@ -39,14 +38,14 @@ describe('Block', () => {
     it('should not returns same object when .clone().', () => {
       const src = new Block(new Date(1), new Date(2));
       const cloned = src.clone();
-      expect(src).not.equal(cloned);
+      expect(src).not.toBe(cloned);
     });
 
     it('should same value for propaties(start, end).', () => {
       const src = new Block(new Date(1), new Date(2));
       const cloned = src.clone();
-      expect(src.start.toISO()).to.equal(cloned.start.toISO());
-      expect(src.end.toISO()).to.equal(cloned.end.toISO());
+      expect(src.start.toISO()).toBe(cloned.start.toISO());
+      expect(src.end.toISO()).toBe(cloned.end.toISO());
     });
   });
 
@@ -68,17 +67,17 @@ describe('Block', () => {
       const a = new Block('2019-01-01T10:00:00', '2019-01-01T12:00:00');
       const b = new Block('2019-01-01T10:30:00', '2019-01-01T11:30:00');
       const output = a.subtract(b);
-      expect(output).to.be.length(2);
+      expect(output.length).toBe(2);
       const [fisrtBlock, lastBlock] = output;
 
-      expect(fisrtBlock.start.hour).to.equal(10);
-      expect(fisrtBlock.start.minute).to.equal(0);
-      expect(fisrtBlock.end.hour).to.equal(10);
-      expect(fisrtBlock.end.minute).to.equal(30);
-      expect(lastBlock.start.hour).to.equal(11);
-      expect(lastBlock.start.minute).to.equal(30);
-      expect(lastBlock.end.hour).to.equal(12);
-      expect(lastBlock.end.minute).to.equal(0);
+      expect(fisrtBlock.start.hour).toBe(10);
+      expect(fisrtBlock.start.minute).toBe(0);
+      expect(fisrtBlock.end.hour).toBe(10);
+      expect(fisrtBlock.end.minute).toBe(30);
+      expect(lastBlock.start.hour).toBe(11);
+      expect(lastBlock.start.minute).toBe(30);
+      expect(lastBlock.end.hour).toBe(12);
+      expect(lastBlock.end.minute).toBe(0);
 
     });
 
@@ -99,13 +98,13 @@ describe('Block', () => {
       const b = new Block('2019-01-01T11:30:00', '2019-01-01T12:00:00');
       const output = a.subtract(b);
 
-      expect(output).to.be.length(1);
+      expect(output.length).toBe(1);
 
       const [outputBlock] = output;
-      expect(outputBlock.start.hour).to.equal(10);
-      expect(outputBlock.start.minute).to.equal(0);
-      expect(outputBlock.end.hour).to.equal(10);
-      expect(outputBlock.end.minute).to.equal(30);
+      expect(outputBlock.start.hour).toBe(10);
+      expect(outputBlock.start.minute).toBe(0);
+      expect(outputBlock.end.hour).toBe(10);
+      expect(outputBlock.end.minute).toBe(30);
     });
   });
 

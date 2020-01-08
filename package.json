@@ -14,23 +14,17 @@
     "timemanagement"
   ],
   "scripts": {
-    "prepare": "tsc",
     "build": "tsc",
-    "pretest": "npm run lint",
-    "test": "nyc mocha test/**/*.ts",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "test": "jest",
     "lint": "tslint --project tsconfig.json 'src/**/*.ts'",
     "doc": "typedoc --out docs/ src/ && touch docs/.nojekyll"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.3",
+    "@types/jest": "^24.0.25",
     "@types/luxon": "^1.15.1",
     "@types/mocha": "^5.2.7",
-    "chai": "^4.2.0",
-    "codecov": "^3.5.0",
-    "mocha": "^6.1.4",
-    "nyc": "^14.1.0",
-    "ts-node": "^8.3.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
     "tslint": "^5.18.0",
     "typedoc": "^0.14.2",
     "typescript": "^3.5.2"
@@ -38,30 +32,5 @@
   "dependencies": {
     "luxon": "^1.11.3",
     "moment": "^2.24.0"
-  },
-  "nyc": {
-    "include": [
-      "src/*.ts",
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "**/*.d.ts",
-      "demo/*.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "json",
-      "lcov",
-      "text",
-      "text-summary",
-      "html"
-    ],
-    "sourceMap": true,
-    "all": true
   }
 }
