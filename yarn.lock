@@ -384,10 +384,10 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.123.tgz#39be5d211478c8dd3bdae98ee75bb7efe4abfe4d"
   integrity sha512-pQvPkc4Nltyx7G1Ww45OjVqUsJP4UsZm+GWJpigXgkikZqJgRm4c48g027o6tdgubWHwFRF15iFd+Y4Pmqv6+Q==
 
-"@types/luxon@^1.15.1":
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.15.2.tgz#528f11f7d6dc08cec0445d4bea8065a5bb6989b2"
-  integrity sha512-zHPoyVrLvNaiMRYdhmh88Rn489ZgAgbc6iLxR5Yi0VCNfeNYHcszbhJV2vDHLNrVGy35BPtWBRn4OP2F9BBvFw==
+"@types/luxon@^1.25.2":
+  version "1.25.2"
+  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.25.2.tgz#f0c98a1f8191883b4918d5e096d6a0eab4d66f76"
+  integrity sha512-lMc5+7ynC4+Pu3RR/FvKGx7WHakrPPTtFEZUy1cMXTbH5fQbso+LZjM/G1moOBpCR9XGNa39gXOQu89lpXTeiw==
 
 "@types/marked@^0.4.0":
   version "0.4.2"
