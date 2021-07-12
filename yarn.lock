@@ -2225,10 +2225,10 @@ loose-envify@^1.0.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-luxon@^1.11.3:
-  version "1.17.2"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.17.2.tgz#95189c450341cfddf5f826ef8c32b5b022943fd5"
-  integrity sha512-qELKtIj3HD41N+MvgoxArk8DZGUb4Gpiijs91oi+ZmKJzRlxY6CoyTwNoUwnogCVs4p8HuxVJDik9JbnYgrCng==
+luxon@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-2.0.1.tgz#b41ca2f1f5ad8099c18603ae6c36a7794039daf0"
+  integrity sha512-8Eawf81c9ZlQj62W3eq4mp+C7SAIAnmaS7ZuEAiX503YMcn+0C1JnMQRtfaQj6B5qTZLgHv0F4H5WabBCvi1fw==
 
 make-dir@^2.1.0:
   version "2.1.0"
